@@ -5,6 +5,10 @@
 
 ## 完成イメージ
 ![Screenshot](images/oss.png)
+
+## デザインカンプ
+![Screenshot](images/oss_design.png)
+
 ### 参考サイト
 - https://www.itochu.co.jp/ja/?fbclid=IwAR3InInzwHJs9SnglCh5sEtP3ucWrAICM_WCJh3ALJksU_HevROvf6mSyJY
 - https://www.ana.co.jp/?fbclid=IwAR3TSNryazci7hhATDNgXdZ36DfFfYvgHLuEdnkJyqcnTZ0xbmJazmgHBvw
