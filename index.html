@@ -12,9 +12,9 @@
   </head>
 
   <body>
-    <header class="header">
-      <h1 class="logo">
-        <a href="index.html">OSS</a>
+    <header class="header wrapper">
+      <h1>
+        <a href="index.html" class="logo">OSS</a>
       </h1>
       <nav class="main-nav">
         <ul class="main-nav_list">
@@ -34,105 +34,129 @@
       </nav>
     </header>
 
-    <main>
-      <figure>
-        <img src="images/#" alt="Life is fun">
-      </figure>
-
-      <section id="concepts">
-      <h2>CONCEPT</h2>
-      <p>コンセプト</p>
-        <figure>
-          <img src="images/main_sky.png" alt="未来創造">
+    <main class="main wrapper">
+      <div class="container">
+        <figure class="block-pic">
+          <img src="images/main_view.jpg" alt="Life is fun">
         </figure>
-        <h3>暮らす</h3>
-        <h3>生きる</h3>
-        <h3>楽しむ</h3>
+      </div>
+
+      <section class="section concepts" id="concepts">
+      <h2 class="heading">CONCEPT</h2>
+      <p>コンセプト</p>
+        <figure class="block-pic">
+          <img src="images/main_sky.png" alt="concepts">
+        </figure>
+        <h3 class="heading-green-circle">暮らす</h3>
+        <h3 class="heading-orange-circle">生きる</h3>
+        <h3 class="heading-yellow-circle">楽しむ</h3>
         <p>暮らす・生きる・楽しむ
           事業の懸念などをかく。
           テキスト、テキスト、テキスト。
         </p>
       </section>
 
-      <figure>
-        <img src="images/main_puzzles.png" alt="挑戦">
-        <p>Life is fun</p>
-        <p>人生を楽しもう</p>
-      </figure>
-
-      <section id="business details">
-      <h2>BUSINESS</h2>
-      <p>ビジネス</p>
-        <div>
-          <h3>暮らす</h3>
-          <figure>
-            <img src="images/main_architecture.jpg" alt="未来設計">
-          </figure>
-          <p>設備・設計</p>
-          <p>テキストテキスト</p>
-        </div>
-        <div>
-          <h3>生きる</h3>
-          <figure>
-            <img src="images/main_study.jpg" alt="未来開拓">
-          </figure>
-          <p>資格</p>
-          <p>テキストテキスト</p>
-        </div>
-        <div>
-          <h3>楽しむ</h3>
-          <figure>
-            <img src="images/main_drone.jpg" alt="自由な未来">
-          </figure>
-          <p>ドローン</p>
-          <p>テキストてきすと</p>
-        </div>
-      </section>
-
-      <section id="what's new">
-      <h2>NEWS</h2>
-      <p>お知らせ</p>
-      <hr>
-      <p>2020/12/1 samplesamplesamplesamplesample</p>
-      <p>2020/12/1 samplesamplesamplesamplesample</p>
-      <p>2020/12/1 samplesamplesamplesamplesample</p>
-      <hr>
-      </section>
-
-      <section id="contact">
-        <h2>OSS</h2>
-        <figure>
-          <img src="images/footer_sky.png" alt="自然な未来">
+      <div class="container">
+        <figure class="block-pic">
+          <img src="images/main_puzzles.png" alt="LifeIsFun">
+          <p>Life is fun</p>
+          <p>人生を楽しもう</p>
         </figure>
-        <h3>会社概要</h3>
-        <div>
-          <address>
-            〒903-1111<br>
-            沖縄県沖縄市沖縄1−1−1<br>
-            <strong>TEL:098-000-9999</strong>
-            E-mail: oss@example.com
-          </address>
+      </div>
+
+      <section class="section business details" id="business details">
+      <h2 class="heading">BUSINESS</h2>
+      <p>事業内容</p>
+        <div class="container">
+          <div class="left-container">
+            <h3 class="heading-green-bg">暮らす</h3>
+            <figure class="circle-pic">
+              <img src="images/main_architecture.jpg" alt="life">
+            </figure>
+            <p>設備・設計</p>
+            <p>テキストテキスト</p>
+          </div>
+          <div class="center-container">
+            <h3 class="heading-orange-bg">生きる</h3>
+            <figure class="circle-pic">
+              <img src="images/main_study.jpg" alt="live">
+            </figure>
+            <p>資格</p>
+            <p>テキストテキスト</p>
+          </div>
+          <div class="right-container">
+            <h3 class="heading-yellow-bg">楽しむ</h3>
+            <figure class="circle-pic">
+              <img src="images/main_drone.jpg" alt="joy">
+            </figure>
+            <p>ドローン</p>
+            <p>テキストてきすと</p>
+          </div>
         </div>
-        <div>
-          <h3>サイトマップ</h3>
-            <ul>
-              <li><a href="#concepts">コンセプト</a></li>
-              <li><a href="#business details">事業内容</a></li>
-              <li><a href="#what's new">新着情報</a></li>
-            </ul>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-          <p>お問い合わせ</p>
+      </section>
+
+      <section class="section what's new" id="what's new">
+      <h2 class="heading">NEWS</h2>
+      <p>お知らせ</p>
+        <hr>
+        <p>2020/12/1 samplesamplesamplesamplesample</p>
+        <p>2020/12/1 samplesamplesamplesamplesample</p>
+        <p>2020/12/1 samplesamplesamplesamplesample</p>
+        <hr>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="wrapper">
+          <h2 class="heading">OSS</h2>
+            <figure>
+              <img src="images/footer_sky.png" alt="contact">
+            </figure>
+          <div class="container">
+            <div class="left-container">
+              <div class="access-row">
+                <address class="access-address">
+                  <strong>会社概要</strong><br>
+                  〒903-1111<br>
+                  沖縄県沖縄市沖縄1−1−1<br>
+                  TEL:098-000-9999<br>
+                  E-mail: oss@example.com
+                </address>
+              </div>
+            </div>
+            <div class="center-container">
+              <h3 class="sitemap">サイトマップ</h3>
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#concepts" class="nav_link">コンセプト</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#business details" class="nav_link">事業内容</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#what's new" class="nav_link">新着情報</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="right-container">
+              <div class="sns">
+                <ul class="sns-list">
+                  <li class="sns-item">
+                    <a href="#" class="sns_link">Twitter</a>
+                  </li>
+                  <li class="sns-item">
+                    <a href="#" class="sns_link">Instagram</a>
+                  </li>
+                </ul>
+                <p>お問い合わせ</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
+      <div class="wrapper">
         <p><small>&copy;Copyright OSS All Rights Reserved.</small></p>
       </div>
     </footer>
