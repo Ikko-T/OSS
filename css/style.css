@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* 初期スタイル調整 */
+* {
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
