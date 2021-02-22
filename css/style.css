@@ -106,3 +106,38 @@ h1 a {
   text-align: center;
 }
 
+/* お知らせ */
+
+.information {
+  margin: 120px 160px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+.caption {
+  font-size: 20px;
+  margin: 20px 140px;
+}
+
+/* コンタクト */
+
+.contact {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.contact-logo {
+  font-size: 30px;
+  font-weight: bold;
+  flood-color: #003DA5;
+  margin: 40px auto ;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
