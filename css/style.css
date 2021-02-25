@@ -7,6 +7,14 @@
 .section-title {
   text-align: center;
   color: #003DA5;
+  font-size: 48px;
+}
+
+.section-title span {
+  display: block;
+  color: #333;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 /* ヘッダー */
@@ -48,7 +56,7 @@ h1 a {
   font-weight: 600;
 }
 
-/* メイン */
+ /* ファーストビュー */
 
 .big-bg {
   width: 100%;
@@ -61,19 +69,12 @@ h1 a {
   margin-top: 90px;
 }
 
-.section-title span {
-  display: block;
-  color: #333;
-}
-
 .content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  margin-top: 48px;
   padding: 0 100px;
-  background: url("../images/visual-img02.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .image {
@@ -85,12 +86,17 @@ h1 a {
   color: #333;
   font-size: 30;
   font-weight: 300;
+  margin-top: 162px;
 }
 
 .mid-bg {
   padding-top: 155px;
-  width: 100%;
-  text-align: center;
+}
+
+.mid-bg img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* メイン ビジネス */
@@ -102,7 +108,13 @@ h1 a {
 .card {
   display: flex;
   margin: 140px 160px;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.card-item {
+  width: 275px;
+  margin-right: 33px;
+  margin-left: 33px;
 }
 
 .card-heading {
@@ -135,30 +147,36 @@ h1 a {
 /* コンタクト */
 
 .contact {
-  width: 1200px;
-  margin: 100px auto;
-  padding: 20px 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
   background: url("../images/visual-img04.png") center center /cover no-repeat;
 }
 
-.contact-logo {
+.logo {
+  margin-left: 170px;
   font-size: 30px;
   font-weight: bold;
-  flood-color: #003DA5;
-  margin: 40px auto ;
+  color: #003DA5;
 }
 
 .box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
-.access-address p {
+.box-item {
+  margin-left: 49px;
+  margin-right: 49px;
+}
+
+.box-item p {
   font-size: 24px;
 }
 
-.box-title {
+.access-address p {
   font-size: 24px;
 }
 
@@ -175,6 +193,10 @@ h1 a {
 
 .sns-item {
   padding-left: 16px;
+}
+
+.sns p img {
+  margin-top: 28px;
 }
 
 /* ドローン */
