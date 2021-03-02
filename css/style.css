@@ -67,6 +67,9 @@ h1 a {
 
 .concept {
   margin-top: 90px;
+  background-image: url("../images/visual-img02.png");
+  background-size: 2600px;
+
 }
 
 .content {
@@ -123,7 +126,16 @@ h1 a {
   font-size: 40px;
 }
 
+.card-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #003DA5;
+  text-align: center;
+
+}
+
 .card-txt {
+  display: block;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -135,13 +147,36 @@ h1 a {
   margin: 120px 160px;
 }
 
+.info-row {
+  display: flex;
+  justify-content: center;
+}
+
 .section-title {
   margin-bottom: 25px;
 }
 
+.date {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 52.5px 45px 24px 24px;
+}
+
+.news {
+  font-size: 16px;
+  font-weight: 300;
+  box-sizing: border-box;
+  width: 100px;
+  padding: 6px;
+  border: 1px solid #000;
+  text-align: center;
+  margin: 52.5px 45px 24px 24px;
+}
+
 .caption {
-  font-size: 20px;
-  margin: 20px 140px;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 52.5px 45px 24px 24px;
 }
 
 /* コンタクト */
