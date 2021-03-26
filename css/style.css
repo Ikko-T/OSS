@@ -1,15 +1,22 @@
 @charset "UTF-8";
-
+/* 共通 */
 * {
   box-sizing: border-box;
 }
-
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
 .section-title {
+  width: ;
+  margin-bottom: 25px;
   text-align: center;
   color: #003DA5;
   font-size: 48px;
 }
-
 .section-title span {
   display: block;
   color: #333;
@@ -18,60 +25,70 @@
 }
 
 /* ヘッダー */
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header-wrapper {
-  width: 1100px;
+.header {
+  width: 1500px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 15px;
+}
+.header-inner {
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
 h1 a {
+  text-decoration: none;
+  width: auto;
   color: #003DA5;
-  font-size: 46px;
+  font-size: clamp(20px, 3vw, 46px);
   font-weight: bold;
 }
-
-.main-nav_list {
+.main-nav {
+  width: 750px;
+  text-align: center;
+}
+.main-nav-list {
+  width: 100%;
   display: flex;
-}
-
-.main-nav_item {
-  margin-left: 36px;
-}
-
-.main-nav_item a {
-  color: #333;
-  font-size: 24px;
+  justify-content: space-around;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
- /* ファーストビュー */
-
-.big-bg {
+/* --------------------------- */
+/* トップページ */
+/* --------------------------- */
+/* ファーストビュー */
+.main {
+  width: 2000px;
+  margin: 0;
+  padding: 0 15px;
+}
+.main-bg-image {
   width: 100%;
-  object-fit: cover;
+  height: 700px;
+  background: url("../images/visual-img01.png") center bottom / cover no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .bg-image {
+   width: 1600px;
+   height: 800px;
+  }
 }
 
-/* メイン コンセプト */
-
+/* コンセプト */
 .concept {
+  width: 100%;
+  height: auto;
   margin-top: 90px;
-  background-image: url("../images/visual-img02.png");
-  background-size: 2600px;
-
+  background: url("../images/visual-img02.png") center bottom / cover repeat;
+  background-size: cover
 }
-
 .content {
   display: flex;
   flex-direction: row-reverse;
@@ -79,89 +96,95 @@ h1 a {
   margin-top: 48px;
   padding: 0 100px;
 }
-
-.image {
+.concept-image {
   padding: 0 96px;
 }
-
 .text {
-  font-family: Hiragino Kaku Gothic ProN;
   color: #333;
-  font-size: 30;
+  font-size: 30px;
   font-weight: 300;
-  margin-top: 162px;
+  line-height: 2;
+  margin: 100px 0;
 }
-
-.mid-bg {
+.concept-bg-image {
   padding-top: 155px;
 }
-
-.mid-bg img {
+.concept-bg-image img {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 1000px) {
+  h2 .section-title {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
 
-/* メイン ビジネス */
-
+/* ビジネス */
 .business {
   margin-top: 120px;
 }
-
 .card {
   display: flex;
   margin: 140px 160px;
   justify-content: center;
 }
-
 .card-item {
   width: 275px;
   margin-right: 33px;
   margin-left: 33px;
 }
-
 .card-heading {
   text-align: center;
   margin-bottom: 24px;
   font-size: 40px;
 }
-
 .card-title {
   font-size: 32px;
   font-weight: 600;
   color: #003DA5;
   text-align: center;
-
 }
-
 .card-txt {
   display: block;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .card-item {
+    margin-bottom: 100px;
+  }
+  .card-title {
+    padding: 20px 0;
+  }
+}
 
 /* お知らせ */
-
 .information {
   margin: 120px 160px;
 }
-
 .info-row {
   display: flex;
   justify-content: center;
 }
-
-.section-title {
-  margin-bottom: 25px;
-}
-
 .date {
   font-size: 32px;
   font-weight: 600;
   margin: 52.5px 45px 24px 24px;
 }
-
 .news {
   font-size: 16px;
   font-weight: 300;
@@ -172,75 +195,78 @@ h1 a {
   text-align: center;
   margin: 52.5px 45px 24px 24px;
 }
-
 .caption {
   font-size: 32px;
   font-weight: 300;
   margin: 52.5px 45px 24px 24px;
 }
+@media (max-width: 1000px) {
+  .info-row {
+    flex-direction: column;
+    align-items: right;
+  }
+}
 
 /* コンタクト */
-
 .contact {
   width: 100%;
   height: 500px;
   object-fit: cover;
   background: url("../images/visual-img04.png") center center /cover no-repeat;
 }
-
 .logo {
   margin-left: 170px;
   font-size: 30px;
   font-weight: bold;
   color: #003DA5;
 }
-
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
-
 .box-item {
   margin-left: 49px;
   margin-right: 49px;
 }
-
 .box-item p {
   font-size: 24px;
 }
-
 .access-address p {
   font-size: 24px;
 }
-
 .nav-item a {
   color: #333;
   font-size: 16px;
   font-weight: 300;
 }
-
 .sns-list {
   display: flex;
   justify-content: center;
 }
-
 .sns-item {
   padding-left: 16px;
 }
-
 .sns p img {
   margin-top: 28px;
 }
-
 .copyright {
   padding: 30px 0 30px;
   text-align: center;
 }
+@media (max-width: 1000px ) {
+  .box {
+    flex-direction: column;
+  }
+  .box-item {
+    margin-bottom: 50px;
+  }
+}
 
+/* --------------------------- */
 /* ドローン */
-
+/* --------------------------- */
 .drone {
   margin-top: 125px;
 }
@@ -346,4 +372,3 @@ h1 a {
 }
 
 /* フッター */
-
