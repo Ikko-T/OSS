@@ -213,17 +213,17 @@ h1 a {
   height: 500px;
   object-fit: cover;
   background: url("../images/visual-img04.png") center center /cover no-repeat;
+  margin-top: 200px;
 }
 .logo {
   margin-left: 170px;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
   color: #003DA5;
 }
 .box {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   margin-top: 100px;
 }
 .box-item {
@@ -256,8 +256,15 @@ h1 a {
   text-align: center;
 }
 @media (max-width: 1000px ) {
+  .contact {
+    height: 900px;
+  }
+  .logo {
+    padding-left: 600px;
+  }
   .box {
     flex-direction: column;
+    align-items: center;
   }
   .box-item {
     margin-bottom: 50px;
@@ -267,55 +274,79 @@ h1 a {
 /* --------------------------- */
 /* ドローン */
 /* --------------------------- */
+.drone-bg-image {
+  width: 100%;
+  height: 700px;
+  background: url("../images/visual-img05.png") center bottom / cover no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .bg-image {
+   width: 1600px;
+   height: 800px;
+  }
+}
 .drone {
   margin-top: 125px;
 }
-
 .group {
   justify-content: center;
   text-align: center;
   background: url("../images/visual-img02.png");
   background-position: center;
 }
-
 .description {
+  font-size: 2rem;
+  line-height: 2;
   margin: 70px 300px;
 }
-
 .sub-visual {
   text-align: right;
 }
-
 .container-top {
+  margin-right: 400px;
+  margin-left: 400px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
-
 .container-heading {
   font-size: 30px;
   margin: 70px 110px;
 }
-
 .container-heading span {
   display: block;
-  font-size: 15px;
+  font-size: 20px;
+  padding-top: 30px;
 }
-
 .container-middle {
+  margin-right: 400px;
+  margin-left: 400px;
   display: flex;
   justify-content: space-around;
 }
-
 .container-bottom {
+  margin-right: 400px;
+  margin-left: 400px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
-
+@media (max-width: 1000px) {
+  .sub-visual {
+   margin-right: 500px;
+  }
+  .container-top,
+  .container-middle,
+  .container-bottom {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
 /* 資格 */
 
-.title {
+.title p {
   font-size: 60px;
   font-weight: bolder;
   position: relative;
