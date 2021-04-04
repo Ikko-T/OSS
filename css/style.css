@@ -141,9 +141,10 @@ h1 a {
   margin-left: 33px;
 }
 .card-heading {
+  width: 300px;
   text-align: center;
   margin-bottom: 24px;
-  font-size: 40px;
+  font-size: 30px;
 }
 .card-title {
   font-size: 32px;
@@ -153,7 +154,8 @@ h1 a {
 }
 .card-txt {
   display: block;
-  font-size: 24px;
+  width: 300px;
+  font-size: 22px;
   font-weight: 300;
   text-align: center;
 }
@@ -358,6 +360,7 @@ h3::after {
     margin-bottom: 100px;
   }
 }
+
 /* --------------------------- */
 /* 資格 */
 /* --------------------------- */
@@ -510,6 +513,160 @@ h3::after {
     transform: translate(-50%);
     background-color: coral;
     opacity: 0.6;
+  }
+}
+
+/* --------------------------- */
+/* ABOUT */
+/* --------------------------- */
+.block {
+  width: 1900px;
+  overflow: hidden;
+}
+@media(max-width: 1024px) {
+  .block {
+    height: 1700px;
+  }
+}
+.bg-block {
+  width: 100%;
+  height: 800px;
+  background: url("../images/visual-img24.png") center bottom / cover no-repeat;
+  background-size: contain;
+  transform: rotate(10);
+}
+.about-bg-image {
+  width: 100%;
+  height: 700px;
+  background: url("../images/visual-img19.png") center bottom / cover no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.about-txt {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: clamp(40px, 3vw, 50px);
+}
+.about-txt span {
+  display: block;
+  text-align: center;
+  color: #003DA5;
+}
+@media (max-width: 1024px) {
+  .bg-image {
+    width: 1600px;
+    height: 800px;
+  }
+}
+.about {
+  margin-top: 100px;
+}
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  padding: 0 100px;
+}
+@media(max-width: 1024px) {
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.about-text {
+  color: #333;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 2;
+}
+.card-business {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media(max-width: 1024px) {
+  .card-business {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+dl {
+  width: 100%;
+  margin: 100px auto;
+  border: 1px solid #ccc;
+}
+@media (max-width: 1024px) {
+  dl {
+    width: 500px;
+    align-items: center ;
+  }
+}
+dt {
+  width: 20%;
+  float: left;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: aliceblue;
+  background-color: blue;
+}
+@media (max-width: 1024px) {
+  dt {
+    width: 100%;
+  }
+}
+dd {
+  width: 80%;
+  padding: 30px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-size: 22px;
+  align-items: center;
+}
+.company-info {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .company-info {
+    flex-direction: column;
+  }
+  dt {
+    align-items: center;
+  }
+  dd {
+    align-items: center;
+  }
+}
+.access-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.google-map {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-top: 35%;
+  margin: 0 50px;
+  min-height: 500px;
+}
+@media (max-width: 1024px) {
+  .google-map {
+    width: 100%;
+    align-items: center;
+    margin-left: 400px;
+  }
+}
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .google-map iframe {
+    width: 50%;
   }
 }
 /* フッター */
