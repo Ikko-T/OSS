@@ -1,9 +1,9 @@
 @charset "utf-8";
 
+@import url(reset.css);
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -13,66 +13,12 @@ body {
   font-family: 'Hiragino Kaku Gothic ProN';
 }
 
-a {
-  text-decoration: none;
-  color: #333333;
-}
-
 header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 85px;
   background-color: pink;
 }
 
-.header_logo {
-  cursor: pointer;
-  margin-right: auto;
-  height: 85px;
-}
-
-ul.nav_links {
-  height: 100%;
-  display: flex;
-}
-
-ul.nav_links > li {
-  margin-left: 36px;
-  list-style: none;
-}
-
-ul.nav_links a {
-  font-weight: 600;
-  font-size: clamp(8px, 2vw, 24px);
-}
-
-li.dropdown {
-  position: relative;
-}
-
-li.dropdown:hover ul.dropdown_menu {
-  display: block;
-}
-
-ul.dropdown_menu {
-  display: none;
-  position: absolute;
-  top: 60px;
-  width: 130px;
-  background-color: #fff;
-  opacity: 0.7;
-}
-
-ul.dropdown_menu li {
-  list-style: none;
-  padding: 10px 0;
-}
-
-ul.dropdown_menu a {
-  display: block;
-  transition: background-color 0.5s;
-}
-ul.dropdown_menu a:hover {
-  background-color: #f3f3f3;
+h1 > a {
+  /* display: inline-block; */
+  /* line-height: 85px; */
 }
