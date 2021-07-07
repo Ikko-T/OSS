@@ -19,7 +19,6 @@ a {
 
 header {
   height: 85px;
-  background-color: pink;
   display: flex;
   align-items: center;
 }
@@ -75,4 +74,8 @@ header .dropdown_menu a {
 header .dropdown_menu a:hover {
   background-color: #f3f3f3;
   transition: background-color 0.5s;
+}
+
+#index .first_view img {
+  width: 100%;
 }
