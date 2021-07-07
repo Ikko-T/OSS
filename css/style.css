@@ -9,16 +9,70 @@
 body {
   font-size: 16px;
   color: #333333;
-  background-color: #ffffff;
   font-family: 'Hiragino Kaku Gothic ProN';
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
 }
 
 header {
   height: 85px;
   background-color: pink;
+  display: flex;
+  align-items: center;
 }
 
-h1 > a {
-  /* display: inline-block; */
-  /* line-height: 85px; */
+header nav {
+  margin-left: auto;
+}
+
+header .nav_links {
+  display: flex;
+}
+
+header .nav_links > li {
+  margin-left: 36px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 85px;
+}
+
+header .dropdown {
+  position: relative;
+}
+
+header .dropdown:hover .dropdown_menu {
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s;
+}
+
+header .dropdown_menu {
+  opacity: 0;
+  visibility: hidden;
+  width: 168px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: -36px;
+}
+
+header .dropdown_menu li {
+  padding-left: 36px;
+  padding-bottom: 24px;
+  line-height: 24px;
+}
+
+header .dropdown_menu li:first-child {
+  padding-top: 24px;
+}
+
+header .dropdown_menu a {
+  display: block;
+}
+
+header .dropdown_menu a:hover {
+  background-color: #f3f3f3;
+  transition: background-color 0.5s;
 }
