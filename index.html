@@ -12,33 +12,94 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="header_logo">
-        <a href="#"><img src="images/logo.png" alt="corporation logo" /></a>
-      </h1>
-      <nav>
-        <ul class="nav_links">
-          <li><a href="#">コンセプト</a></li>
-          <li class="dropdown">
-            <a href="#">事業内容</a>
-            <ul class="dropdown_menu">
-              <li><a href="#">設備・設計</a></li>
-              <li><a href="#">資格</a></li>
-              <li><a href="#">ドローン</a></li>
-            </ul>
-          </li>
-          <li><a href="#">新着情報</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
-      </nav>
+    <header class="ly_header">
+      <div class="ly_header_inner">
+        <h1 class="ly_header_inner_logo">
+          <a href="/"><img src="images/logo.png" alt="corporation logo" /></a>
+        </h1>
+        <nav class="bl_tabNav">
+          <ul class="bl_tabNav_inner">
+            <li><a class="bl_tabNav_link" href="#">コンセプト</a></li>
+            <li class="bl_dropdown">
+              <a class="bl_tabNav_link" href="#">事業内容</a>
+              <ul class="bl_dropdown_menu">
+                <li><a class="bl_tabNav_link" href="#">設備・設計</a></li>
+                <li><a class="bl_tabNav_link" href="#">資格</a></li>
+                <li><a class="bl_tabNav_link" href="#">ドローン</a></li>
+              </ul>
+            </li>
+            <li><a class="bl_tabNav_link" href="#">新着情報</a></li>
+            <li><a class="bl_tabNav_link" href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="index">
+    <!-- <main id="index">
       <div class="first_view">
-        <img src="images/index_first_view.png" alt="ocean view" />
+        <img src="images/index_first_view.png" alt="海の画像" />
       </div>
-    </main>
+      <div class="group">
+        <section class="concept">
+          <h2>CONCEPT</h2>
+          <p>コンセプト</p>
+          <div class="bg-image">
+            <div class="content">
+              <p><img src="images/visual-img01.png" alt="空の画像" /></p>
+              <p class="text"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main> -->
 
-    <footer></footer>
+    <footer>
+      <div class="ly_footer">
+        <div class="ly_footer_inner">
+          <div class="bl_footer_logo"><img src="images/logo.png" alt="corporation logo" /></div>
+          <div class="bl_cardUnit">
+            <div class="bl_card">
+              <h4 class="bl_card_ttl el_lv4heading">会社概要</h4>
+              <p class="bl_card_address">
+                〒903-1111 <br />
+                沖縄県沖縄市高原222-2 <br />
+                TEL: 098-332-2222 <br />
+                E-mail: test@example.com
+              </p>
+            </div>
+            <div class="bl_card">
+              <div class="bl_card_ttl el_lv4heading">サイトマップ</div>
+              <nav class="bl_card_tabNav">
+                <ul class="bl_card_tabNav_inner">
+                  <li><a href="#" class="bl_card_tabNav_link">コンセプト</a></li>
+                  <li><a href="#" class="bl_card_tabNav_link">設備・設計</a></li>
+                  <li><a href="#" class="bl_card_tabNav_link">資格取得</a></li>
+                  <li><a href="#" class="bl_card_tabNav_link">ドローン</a></li>
+                  <li><a href="#" class="bl_card_tabNav_link">新着情報</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="bl_card">
+              <div class="bl_card_snsWrapper">
+                <a href="#" class="el_btn_sns">
+                  <img src="images/btn_instagram.png" alt="instagram" />
+                </a>
+                <a href="#" class="el_btn_sns">
+                  <img src="images/btn_twitter.png" alt="twitter" />
+                </a>
+              </div>
+              <div class="bl_card_imgWrapper">
+                <a class="el_btn" href="#">
+                  <img src="images/btn_img01.png" alt="contact" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bl_copyRight">
+          <small class="el_footerCopyright">Copyright &copy; OSS All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
