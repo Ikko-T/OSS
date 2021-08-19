@@ -1,0 +1,197 @@
+main {
+  .main-view {
+    background-image: url(../images/visual-mv.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: calc(532 / 1280 * 100%);
+    margin-bottom: 88px;
+  }
+
+  .container {
+    .concept {
+      h2 {
+        /* font-family: '凸版分久見出しゴシック'; */
+        font-size: clamp(24px, 3vw, 48px);
+        color: #003da5;
+        text-align: center;
+        margin-bottom: 10px;
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: clamp(16px, 2vw, 24px);
+          font-weight: 300;
+          color: #333;
+        }
+      }
+
+      .wrapper {
+        position: relative;
+        background-image: url(../images/visual-img02.png);
+        background-size: cover;
+        width: 100%;
+        padding-top: calc(540 / 1280 * 100%);
+
+        .wrapper-inner {
+          width: 100%;
+          max-width: 1150px;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          .image {
+            margin-left: 53px;
+            width: clamp(30%, 30vw, 100%);
+
+            img {
+              width: clamp(30%, 30vw, 100%);
+            }
+          }
+
+          .text {
+            font-size: clamp(16px, 2vw, 30px);
+            line-height: clamp(40px, 5vw, 70px);
+            font-weight: 300;
+            text-align: center;
+            margin-left: 150px;
+          }
+        }
+      }
+    }
+
+    .bg-view > img {
+      width: 100%;
+      margin-bottom: 120px;
+    }
+
+    .business {
+      h2 {
+        /* font-family: '凸版分久見出しゴシック'; */
+        font-size: clamp(24px, 3vw, 48px);
+        color: #003da5;
+        text-align: center;
+        margin-bottom: 10px;
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: clamp(16px, 2vw, 24px);
+          font-weight: 300;
+          color: #333;
+        }
+      }
+
+      .wrapper {
+        background-image: url(../images/visual-img25.png);
+        background-size: cover;
+        width: 100%;
+        padding-top: calc(810 / 1280 * 100%);
+        margin-top: 73px;
+        position: relative;
+
+        .wrapper-inner {
+          width: 100%;
+          max-width: 960px;
+          margin-right: auto;
+          margin-left: auto;
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          .content {
+            max-width: 276px;
+          }
+
+          .image {
+            text-align: center;
+            margin-bottom: 24px;
+
+            img {
+              width: clamp(54%, 25vw, 100%);
+            }
+          }
+
+          h3 {
+            font-size: clamp(20px, 3vw, 32px);
+            font-weight: 600;
+            color: #003da5;
+            text-align: center;
+            margin-bottom: 24px;
+          }
+
+          .text {
+            font-size: clamp(16px, 3vw, 24px);
+            font-weight: 300;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+
+    .news {
+      h2 {
+        /* font-family: '凸版分久見出しゴシック'; */
+        font-size: clamp(24px, 3vw, 48px);
+        color: #003da5;
+        text-align: center;
+        margin-bottom: 10px;
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: clamp(16px, 2vw, 24px);
+          font-weight: 300;
+          color: #333;
+        }
+      }
+
+      .wrapper {
+        max-width: 1032px;
+        margin: 24.5px auto 0 auto;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        padding: 48.5px 69px;
+
+        .wrapper-inner {
+          display: flex;
+          margin-bottom: 40px;
+
+          .date {
+            width: 100%;
+            height: 42px;
+            font-size: clamp(20px, 2vw, 32px);
+            font-weight: 600;
+
+            span {
+              display: inline-block;
+              line-height: 42px;
+              width: 150px;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 300;
+              margin-left: 24px;
+              margin-right: 24px;
+              border: 1px solid #333;
+            }
+          }
+
+          .text {
+            max-width: 500px;
+            font-size: clamp(20px, 2vw, 32px);
+            word-wrap: break-word;
+          }
+        }
+
+        .wrapper-inner:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
