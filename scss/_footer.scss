@@ -1,0 +1,59 @@
+footer {
+  background-image: url(../images/visual-img04.png);
+  background-size: cover;
+  width: 100%;
+  padding-top: calc(383 / 1280 * 100%);
+
+  .footer {
+    height: 454px;
+
+    .footer-inner {
+      max-width: 1150px;
+      margin: 0 auto 27px auto;
+      padding-right: 104px;
+      padding-left: 104px;
+
+      .cardUnit {
+        display: flex;
+        justify-content: space-around;
+
+        .heading {
+          border-bottom: 1px solid #000;
+          padding-bottom: 12.5px;
+          margin-bottom: 12.5px;
+          font-size: clamp(20px, 2vw, 24px);
+          font-weight: 300;
+        }
+
+        .address {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 27px;
+        }
+
+        .nav-list li {
+          margin-bottom: 8px;
+
+          .nav-link {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+
+        .wrapper {
+          text-align: center;
+          margin-bottom: 28px;
+
+          .btn-sns {
+            margin: 8px;
+          }
+        }
+      }
+    }
+
+    .copyRight {
+      text-align: center;
+    }
+  }
+}
