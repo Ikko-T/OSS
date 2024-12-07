@@ -77,19 +77,15 @@ CSS の設計手法の１つでする PRECCS を採用し、かつレスポン�
 
 ---
 
-[Ikko Tsuha]()
+[IT)
 
-- Twitter: [@ikko1021](https://twitter.com/ikko1021)
-
-- GitHub: [@Ikko-T](https://github.com/Ikko-T)
-
-- Qiita: <a href="https://qiita.com/Ikko-T" rel="nofollow">@Ikko-T</a>
+- GitHub: [@IT](https://github.com/Ikko-T)
 
 ## ライセンス
 
 ---
 
-(C)Copyright 2021 Ikko Tsuha
+(C)Copyright 2021 IT
 
 This web site is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
